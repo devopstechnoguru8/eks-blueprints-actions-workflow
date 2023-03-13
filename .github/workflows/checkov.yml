@@ -25,7 +25,7 @@ jobs:
           download_external_modules: false
           output_format: cli,sarif
           output_file_path: console,results.sarif
-          soft_fail: true # Do not return an error code until all issues are fixed
+          soft_fail: false # Do not return an error code until all issues are fixed
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
