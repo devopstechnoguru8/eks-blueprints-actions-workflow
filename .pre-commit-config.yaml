@@ -24,7 +24,7 @@ repos:
           - --quiet
           - --download-external-modules=false
           - --skip-check=CKV2_GHA_1
-          - --soft-fail
+          - --no-soft-fail
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.77.1
     hooks:
